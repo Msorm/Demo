@@ -38,3 +38,36 @@ else
 	options
 end	
 	
+
+while mytotal == 21
+	puts "What would you like to do? 1) Hit 2) Stay"
+	hit_or_stay = gets.chomp
+
+	if !["1", "2"].include?(hit_or_stay)
+		puts "You need to choose 1 or 2"
+		break
+	end
+	
+	if hit_or_stay == "2"
+		puts "You have choosen to stay"
+		next
+	end
+	
+	if hit_or_stay == "1"
+		
+		new_cards = deck.pop
+		puts "Currently dealing your cards #{new_cards}"
+		mycards == new_cards
+		mytotal = total(mycards)
+		puts "Your total is #{mytotal}"
+		
+	end	
+		
+	if mytotal == 21
+		puts "Congrats! You won!"
+		exit
+	elsif mytotal > 21
+		puts "Sorry, you lose."
+		exit
+	end
+end			
