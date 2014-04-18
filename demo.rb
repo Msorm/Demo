@@ -23,7 +23,7 @@ operator = gets.chomp
 
 if operator == "1"
 	result = num1.to_i + num2.to_i
-	push_result(result)
+	push_result("#{result}")
 elsif operator == "2"
 	result = num1.to_i - num2.to_i
 	push_result(result)
