@@ -102,9 +102,9 @@ while dealertotal < 17
 	if dealertotal == 21
 	puts "Sorry, dealer wins, you lose!"
 	break
-elsif dealertotal > 21
+	elsif dealertotal > 21
 	puts "Congrats you win!"
-	break
+	next
 	end
 end
 
